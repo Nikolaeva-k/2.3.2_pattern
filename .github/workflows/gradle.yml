@@ -18,5 +18,6 @@ jobs:
         run: chmod +x gradlew
       - name: Start SUT
         run: java -jar ./artifacts/app-ibank.jar &
+
       - name: Build with Gradle
         run: ./gradlew test --info
